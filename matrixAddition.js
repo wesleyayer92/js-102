@@ -6,7 +6,9 @@ function matrixAddition(nestArr1, nestArr2) {
         for (let j = 0; j < nestArr1[i].length; j++) {
             nestResult.push(nestArr1[i][j] + nestArr2[i][j]);
         }
+        // put nested array into our outer array
         totalResult.push(nestResult);
+        // reset nested array to be empty before we do more arithmetic
         nestResult = [];
     }
     return totalResult;
